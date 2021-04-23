@@ -48,6 +48,8 @@ filegroup(
         "pip.bzl",
         "//python/pip_install:bzl",
         "//python/private:bzl",
+        "pytest.bzl",
+        "suite.bzl",
     ],
     visibility = ["//visibility:public"],
 )
@@ -135,4 +137,6 @@ alias(
 exports_files([
     "packaging.bzl",
     "pip.bzl",
+    "pytest.bzl",
+    "suite.bzl"
 ])
